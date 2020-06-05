@@ -17,6 +17,19 @@ Aplicação web construída na trilha <strong>Starter</strong> da <strong>Next L
 
 As aulas foram ministradas pelo **[Mayk Brito](https://github.com/maykbrito)** nas aulas da **Next Level Week**.
 
+## 💻 Tecnologias usadas:
+
+<h3>Front-end</h3>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+
+<h3>Back-end</h3>
+    <li>JavaScript</li>
+    <li>Node.js</li>
+    <li>SQL</li>
+    <li>SQLite</li>
+
 ## 📝 License
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
