@@ -14,7 +14,7 @@ nunjucks.configure("src/views", {
 })
 
 server.get("/", (req, res) => {
-    return res.render("index.html", {tittle: "Um teste"})
+    return res.render("index.html")
 })
 
 
@@ -59,7 +59,6 @@ server.post("/savepoint", (req, res) => {
         console.log("Cadastrado com sucesso.")
         console.log(this)
         return res.render("create-point.html", {saved: true})
-
     }
 
     db.run(query, values, afterInsertData)

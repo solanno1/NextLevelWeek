@@ -61,7 +61,7 @@ function handleSelectedItem(event) {
     itemLi.classList.toggle("selected")
     const itemId = itemLi.dataset.id
 
-           // console.log('ITEM ID: ', itemId)
+            console.log('ITEM ID: ', itemId)
 
 
     const alreadySelected = selectItems.findIndex(item => {
@@ -79,8 +79,14 @@ function handleSelectedItem(event) {
             selectItems.push(itemId)
         }    
 
-       //  console.log('selectedItems: ', selectItems)
+         console.log('selectedItems: ', selectItems)
 
 
     collectedItems.value = selectItems
+   
+
+        // if(collectedItems.value == ""){
+        //     return res.send("Erro no cadastro")
+        // }
+
 }
