@@ -56,12 +56,17 @@ const collectedItems = document.querySelector("input[name=items]")
 
 let selectItems = []
 
+// console.log(selectItems.value)
+
+
+
+
 function handleSelectedItem(event) {
     const itemLi = event.target
     itemLi.classList.toggle("selected")
     const itemId = itemLi.dataset.id
 
-            console.log('ITEM ID: ', itemId)
+           // console.log('ITEM ID: ', itemId)
 
 
     const alreadySelected = selectItems.findIndex(item => {
@@ -79,14 +84,40 @@ function handleSelectedItem(event) {
             selectItems.push(itemId)
         }    
 
-         console.log('selectedItems: ', selectItems)
+        collectedItems.value = selectItems
 
 
-    collectedItems.value = selectItems
-   
+        // console.log('selectedItems: ', selectItems)
+        // console.log("collectedItems.value: ", collectedItems.value)
 
-        // if(collectedItems.value == ""){
-        //     return res.send("Erro no cadastro")
+
+        console.log(selectItems.length)
+
+
+        // function submit_form() {
+        //     if (selectItems.length == 0) {
+        //         alert("teste");
+        //         return
+        //     }
+        // }
+        
+
+        // window.myFunction = function validateMyForm(){
+        //     if (selectItems.length == 0 || selectItems == null){
+        //         alert("Necessário selecionar um item de coleta")
+        //         return false;     
+        //     }        
         // }
 
+        // $('form').on('submit', validateMyForm);
+        // validateMyForm()
+
+}
+
+function validateMyForm(){
+    if (selectItems.length == 0 || selectItems == null){
+        var x = document.getElementById("validation").hidden = false;
+        return false;     
+    }
+    hidden = true    
 }

@@ -51,10 +51,14 @@ server.post("/savepoint", (req, res) => {
     ]
 
     function afterInsertData(err){
+
         if(err){
+            
             console.log(err)
-            return res.send("Erro no cadastro")
+            return res.send("Erro no cadastro", {saved: false})
         }
+
+
 
         console.log("Cadastrado com sucesso.")
         console.log(this)

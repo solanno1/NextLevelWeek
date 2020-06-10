@@ -13,7 +13,7 @@
 {% block content %}
     {% include "partials/page-header.html" %}
 
-    <form action="/savepoint" method="POST">
+    <form action="/savepoint" method="POST" onsubmit="return validateMyForm();">
 
         <h1>Cadastro do ponto de coleta</h1>
 
@@ -72,8 +72,9 @@
             <legend>
                 <h2>Itens de coleta</h2>
                 <span>Selecione um ou mais itens abaixo</span>
+                
             </legend>
-
+            <p hidden id="validation">Necessário selecionar pelo menos um item abaixo</p>
             <div class="itens-grid">
                 <li data-id="Lâmpadas">
                     <img src="/assets/lampadas.svg" alt="Lâmpadas">
@@ -109,8 +110,7 @@
             <input type="hidden" name="items">
         </fieldset>
 
-        <button type="submit">Cadastrar ponto de coleta</button>
-
+        <button type="submit">Cadastrar ponto de coleta</button>    
     </form>
 
 

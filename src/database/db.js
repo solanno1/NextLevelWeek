@@ -13,7 +13,7 @@ db.serialize(() => {
     //         address2 TEXT,
     //         state TEXT,
     //         city TEXT,
-    //         items TEXT
+    //         items TEXT NOT NULL
     //     );
     // `)
     // const query = `
@@ -50,12 +50,12 @@ db.serialize(() => {
     // db.run(query, values, afterInsertData)
 
 
-    // db.run(`DELETE FROM places WHERE id = ?`, [3], function(err){
-    //     if(err){
-    //         return console.log(err)
-    //     }
-    //     console.log("Deletado com sucesso")
-    // })
+    //  db.run(`DROP TABLE places`, [], function(err){
+    //      if(err){
+    //          return console.log(err)
+    //      }
+    //      console.log("Deletado com sucesso")
+    //  })
 
     // db.all(`SELECT * FROM places`, function(err, rows){
     //     if(err){

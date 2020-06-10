@@ -110,6 +110,12 @@ form button{
     transition: background-color 400ms;
 }
 
+form #validation{
+    color: red;
+    padding-left: 4px;
+    padding-bottom: 6px;
+}
+
 form button:hover{
     background-color: #2fb86e;
 }
