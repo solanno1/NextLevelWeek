@@ -88,29 +88,9 @@ function handleSelectedItem(event) {
 
 
         // console.log('selectedItems: ', selectItems)
-        // console.log("collectedItems.value: ", collectedItems.value)
 
 
-        console.log(selectItems.length)
-
-
-        // function submit_form() {
-        //     if (selectItems.length == 0) {
-        //         alert("teste");
-        //         return
-        //     }
-        // }
-        
-
-        // window.myFunction = function validateMyForm(){
-        //     if (selectItems.length == 0 || selectItems == null){
-        //         alert("Necessário selecionar um item de coleta")
-        //         return false;     
-        //     }        
-        // }
-
-        // $('form').on('submit', validateMyForm);
-        // validateMyForm()
+       // console.log(selectItems.length)
 
 }
 
